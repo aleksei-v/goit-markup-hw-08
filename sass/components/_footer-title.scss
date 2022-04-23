@@ -1,0 +1,10 @@
+.footer-title {
+    margin-bottom: 20px;
+
+    font-family: var(--major-font-family);
+    @include font(14px, 700, 16px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--major-color-light);
+}

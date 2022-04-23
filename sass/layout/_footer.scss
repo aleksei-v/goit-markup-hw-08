@@ -1,0 +1,118 @@
+.footer {
+    padding: 60px 0;
+
+    background-color: var(--background-color);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__adress {
+    margin-right: 70px;
+}
+
+.bottom-social {
+    margin-right: 94px;
+    padding-top: 12px;
+}
+
+.footer__logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+
+    color: var(--major-color-light);
+}
+
+.address {
+    margin-top: 21px;
+    margin-bottom: 9px;
+
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+
+    color: var(--major-color-light);
+}
+
+.bottom-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.bottom-contacts__link {
+    line-height: 1.72;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+
+    color: var(--major-text-color);
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms var(--timing-function);
+
+    .bottom-contacts__item &:hover,
+    .bottom-contacts__item &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.social-list__item--footer:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list__link--bottom {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list__icon--footer {
+    fill: var(--major-color-light);
+}
+
+.footer-contact-form__title {
+    display: block;
+}
+
+.footer-contact-form__input {
+    height: 50px;
+    min-width: 358px;
+
+    margin-right: 12px;
+    padding-left: 16px;
+    color: var(--major-color-light);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: var(--background-color);
+
+    transition: border-color 250ms var(--timing-function);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+    
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.email-button__send {
+    height: 24px;
+    width: 24px;
+
+    margin-left: 10px;
+}

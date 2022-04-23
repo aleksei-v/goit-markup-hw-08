@@ -1,0 +1,25 @@
+.accent-button {
+    align-items: center;
+    min-width: 200px;
+
+    padding: 10px 20px;
+    border-radius: 4px;
+
+    border: none;
+
+    font-family: inherit;
+    cursor: pointer;
+    @include font(24px, 700, 30px);
+    letter-spacing: 0.06em;
+
+    color: red;
+    background: var(--accent-color);
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-action-btn);
+    }
+}
+

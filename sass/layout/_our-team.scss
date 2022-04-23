@@ -1,0 +1,56 @@
+.our-team {
+    background-color: var(--backgroud-light-color);
+}
+
+.our-team__order {
+    display: flex;
+}
+
+.our_team__employee {
+    width: 270px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.our-team__wrapper {
+    padding: 30px 32px;
+
+    border-radius: 0px 0px 4px 4px;
+
+    background: var(--major-color-light);
+}
+
+.our-team__employee-name {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    color: var(--color-titles);
+}
+
+.our-team__position {
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--major-text-color);
+}
+
+.social-list--team {
+    justify-content: space-between;
+}
+
+.social-list__icon--team {
+    fill: var(--initial-gray-color);
+}

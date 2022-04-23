@@ -1,0 +1,21 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/accent-btn';
+@import './components/secondary-titles';
+@import './components/modal-window';
+@import './components/footer-title';
+@import './components/main-title';
+@import './components/social-list';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/activities';
+@import './layout/our-team';
+@import './layout/clients';
+@import './layout/footer';

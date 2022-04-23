@@ -1,0 +1,13 @@
+.main__title {
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @include font(44px, 900, 60px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--major-color-light);
+}
