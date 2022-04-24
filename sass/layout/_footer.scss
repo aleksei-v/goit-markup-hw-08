@@ -20,8 +20,8 @@
 
 .footer__logo {
     font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 26px;
+
+    @include font(26px, 700, 31px);
 
     color: var(--major-color-light);
 }
@@ -30,9 +30,8 @@
     margin-top: 21px;
     margin-bottom: 9px;
 
-    font-weight: 400;
+    @include font(14px, 400, 24px);
     font-style: normal;
-    line-height: 1.71;
 
     color: var(--major-color-light);
 }
@@ -42,9 +41,8 @@
 }
 
 .bottom-contacts__link {
-    line-height: 1.72;
+    @include font(14px, 400, 24px);
     letter-spacing: 0.02em;
-    font-weight: 400;
 
     color: var(--major-text-color);
 
@@ -96,9 +94,7 @@
     }
     
     &::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
+        @include font(16px, 400, 20px);
         letter-spacing: 0.03em;
     
         color: rgba(255, 255, 255, 0.6);

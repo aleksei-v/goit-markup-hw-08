@@ -9,10 +9,10 @@
 
     font-family: inherit;
     cursor: pointer;
-    @include font(24px, 700, 30px);
+    @include font(16px, 700, 30px);
     letter-spacing: 0.06em;
 
-    color: red;
+    color: var(--major-color-light);
     background: var(--accent-color);
 
     transition: background-color 250ms var(--timing-function);

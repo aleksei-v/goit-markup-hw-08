@@ -38,7 +38,7 @@
     transform: translateY(100%);
 
     width: 100%;
-    height: 100%;
+    height: 370px;
 
     background-color: rgba(33, 150, 243, 0.9);
 
@@ -60,9 +60,7 @@
     padding: 64px 24px;
     margin: auto;
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+    @include font(18px, 400, 28px);
     letter-spacing: 0.03em;
 
     color: var(--major-color-light);
@@ -77,18 +75,15 @@
 .portfolio__item {
     margin-bottom: 4px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font(18px, 700, 36px);
     letter-spacing: 0.06em;
 
     color: var(--color-titles);
 }
 
 .portfolio__option {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
+    @include font(16px, 400, 30px);
+
 
     color: var(--major-text-color);
 }

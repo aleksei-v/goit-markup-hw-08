@@ -1,7 +1,6 @@
 :root {
   --major-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
-  --major-line-height: 1.19;
   --major-letter-spacing: 0.03em;
   --accent-color: #2196f3;
   --logo-color: #000000;
@@ -38,9 +37,6 @@ html {
 
 body {
   font-family: var(--major-font-family);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: var(--major-line-height);
   letter-spacing: var(--major-letter-spacing);
   color: var(--major-text-color);
 }
@@ -100,9 +96,9 @@ img {
   border: none;
   font-family: inherit;
   cursor: pointer;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  font-weight: 700;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--major-color-light);
   background: var(--accent-color);
@@ -111,6 +107,19 @@ img {
 
 .accent-button:hover, .accent-button:focus {
   background-color: var(--color-action-btn);
+}
+
+.logo__part {
+  color: var(--accent-color);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--color-titles);
 }
 
 .social-list {
@@ -143,9 +152,8 @@ img {
 .footer-title {
   margin-bottom: 20px;
   font-family: var(--major-font-family);
-  font-style: 400;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -170,8 +178,9 @@ img {
 .top-logo {
   margin-right: 92px;
   font-family: var(--secondary-font-family);
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
   color: var(--logo-color);
 }
 
@@ -183,6 +192,8 @@ img {
 .nav-menu__item .nav-menu__link {
   display: block;
   padding: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-titles);
@@ -241,9 +252,10 @@ img {
   display: flex;
   align-items: center;
   margin-right: 0;
-  line-height: 1.72;
-  letter-spacing: 0.02em;
+  font-size: 14px;
   font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--major-text-color);
   transition: color 250ms var(--timing-function);
 }
@@ -268,10 +280,9 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 16px;
-  line-height: 1.62;
+  font-weight: 500;
+  line-height: 1.63;
   color: var(--color-titles);
   background-color: var(--backgroud-light-color);
   transition: box-shadow 250ms var(--timing-function);
@@ -321,7 +332,7 @@ img {
   position: absolute;
   transform: translateY(100%);
   width: 100%;
-  height: 100%;
+  height: 370px;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms var(--timing-function);
 }
@@ -339,8 +350,8 @@ img {
   height: 100%;
   padding: 64px 24px;
   margin: auto;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--major-color-light);
@@ -353,17 +364,17 @@ img {
 
 .portfolio__item {
   margin-bottom: 4px;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-titles);
 }
 
 .portfolio__option {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.87;
+  font-weight: 400;
+  line-height: 1.88;
   color: var(--major-text-color);
 }
 
@@ -388,17 +399,19 @@ img {
 
 .footer__logo {
   font-family: var(--secondary-font-family);
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
   color: var(--major-color-light);
 }
 
 .address {
   margin-top: 21px;
   margin-bottom: 9px;
+  font-size: 14px;
   font-weight: 400;
-  font-style: normal;
   line-height: 1.71;
+  font-style: normal;
   color: var(--major-color-light);
 }
 
@@ -407,9 +420,10 @@ img {
 }
 
 .bottom-contacts__link {
-  line-height: 1.72;
-  letter-spacing: 0.02em;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
   color: var(--major-text-color);
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
@@ -455,8 +469,8 @@ img {
 }
 
 .footer-contact-form__input::placeholder {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);

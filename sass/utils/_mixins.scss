@@ -42,8 +42,9 @@
     }
 }
 
-@mixin font($fs, $fw, $ln) {
+@mixin font($fs, $fw, $lh) {
     font-size: $fs;
     font-weight: $fw;
     line-height: decimal-round($lh / $fs, 2);
 }
+
