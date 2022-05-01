@@ -185,8 +185,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
-  height: 581px;
   border-radius: 4px;
   background: var(--major-color-light);
   transition: transform 250ms var(--timing-function);
@@ -343,6 +341,36 @@ img {
 
 .contact-form-checkbox__input:focus + .contact-form-checkbox__label::before {
   outline: 0 solid var(--color-titles);
+}
+
+@media (max-width: 449px) {
+  .modal {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .contact-form-checkbox__label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+  }
+  .contact-form__start {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .footer-title {
@@ -679,7 +707,7 @@ img {
   .hero {
     max-width: 768px;
     height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/backimg-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backimg-tablet.jpg);
   }
 }
 
@@ -687,7 +715,7 @@ img {
   .hero {
     height: 400px;
     max-width: 480px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/backimg-phone.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backimg-phone.jpg);
   }
 }
 

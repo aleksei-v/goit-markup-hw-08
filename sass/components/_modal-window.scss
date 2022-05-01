@@ -29,8 +29,6 @@
     transform: translate(-50%, -50%) scale(1);
 
     padding: 40px;
-    width: 528px;
-    height: 581px;
 
     border-radius: 4px;
 
@@ -208,6 +206,26 @@
         }
     }
 }
-
-
-
+@media (max-width: 449px) {
+    .modal {
+        width: 100vw;
+    }
+}
+@media (max-width: 1199px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+    .contact-form-checkbox__label{
+        @include font(12px, 400, 14px);
+    }
+    .contact-form__start {
+        @include font(20px, 700, 30px);
+    }
+}
+@media (min-width: 1200px) {
+    .modal {
+            width: 528px;
+            height: 581px;
+    }
+}
