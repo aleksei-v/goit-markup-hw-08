@@ -1,13 +1,19 @@
 .main__title {
-    margin-bottom: 30px;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+        text-align: center;
 
-    @include font(44px, 900, 60px);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+        max-width: 360px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
 
-    color: var(--major-color-light);
+        @include font(26px, 900, 42px);
+        letter-spacing: 0.06em;
+        
+        color: var(--major-color-light);
+}
+@media screen and (min-width: 1200px) {
+    .main__title {
+        max-width: 696px;
+        @include font(44px, 900, 60px);
+    }
 }

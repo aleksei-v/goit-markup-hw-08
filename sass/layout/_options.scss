@@ -1,14 +1,9 @@
 .options {
     display: flex;
-    justify-content: center;
-
-    margin-bottom: 50px;
 }
-
 .options>.options__item:not(:last-child) {
     margin-right: 8px;
 }
-
 .options__link {
     padding: 6px 22px;
 
@@ -33,5 +28,27 @@
     &--active {
         color: var(--major-color-light);
         background-color: var(--accent-color);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .options {
+        flex-wrap: wrap;
+        margin-bottom: -15px;
+    }
+    .options__item {
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .options {
+        justify-content: center;
+
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .options {
+        margin-bottom: 50px;
     }
 }

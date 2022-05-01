@@ -1,37 +1,53 @@
-.header {
-    border-bottom: 1px solid #ececec;
-}
-
 .header__flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
-
 .top-logo {
-    margin-right: 92px;
-
     font-family: var(--secondary-font-family);
     @include font(26px, 700, 31px);
 
     color: var(--logo-color);
 }
 
-.nav-menu {
+@media screen and (max-width: 767px) {
+    .header {
+        position: relative;
+        padding: 10px 0;
+    }
+    .nav-menu {
+        display: none;
+    }
+    
+    .contacts {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+.mobile-menu,
+.burger-menu {
+    display: none;
+}
+.top-logo {
+    margin-right: 92px;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.navigation {
     display: flex;
     align-items: center;
 }
+
 .nav-menu__link {
     .nav-menu__item & {
         display: block;
-    
+
         padding: 32px 0;
-        
+
         @include font(14px, 500, 16px);
         letter-spacing: 0.02em;
 
@@ -43,7 +59,11 @@
     .nav-menu__item &:focus {
         color: var(--accent-color);
     }
+}
 
+.nav-menu {
+    display: flex;
+    align-items: center;
 }
 
 .nav-menu__item:not(:last-child) {
@@ -63,24 +83,15 @@
         display: block;
         left: 0;
         bottom: 0;
-    
+
         height: 4px;
         min-width: 100%;
-    
+
         border-radius: 2px;
-    
+
         background: var(--accent-color);
     }
 }
-
-.contacts {
-    display: flex;
-}
-
-.contacts__item:first-child {
-    margin-right: 50px;
-}
-
 .contacts__icon {
     margin-right: 10px;
 
@@ -97,7 +108,6 @@
 .contacts__link {
     display: flex;
     align-items: center;
-    margin-right: 0;
 
     @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
@@ -110,4 +120,22 @@
     .contacts__item &:focus {
         color: var(--accent-color);
     }
+}
+}
+//0-1200px
+@media screen and (max-width: 1200px) {
+.contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+}
+//1200px+
+
+@media screen and (min-width: 1200px) {
+.contacts {
+    display: flex;
+}
+
+.contacts__item:first-child {
+    margin-right: 50px;
+}
 }

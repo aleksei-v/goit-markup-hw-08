@@ -26,6 +26,11 @@
                     <li class="nav-menu__item"><a class="nav-menu__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
+            <button type="button" class="burger-menu" data-menu-open>
+                <svg class="burger-menu__icon" width="40" height="40" >
+                    <use href="./images/sprite.svg#burger-menu"></use>
+                </svg>
+            </button>
             <ul class="contacts list">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com">
@@ -44,6 +49,38 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close" data-menu-close>
+                    <svg class="btn-close__icon" width="18" height="18">
+                        <use href="./images/sprite.svg#vector"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-list list">
+                    <li class="mobile-list__item"><a class="mobile-list__link link mobile-list__link--active" href="./index.html">Студия</a></li>
+                    <li class="mobile-list__item"><a class="mobile-list__link link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-list__item"><a class="mobile-list__link link" href="">Контакты</a></li>
+                </ul>
+                <ul class="mobile-contacts list">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__phone link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__email link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobile-social list">
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">Instagram</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">Twitter</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">Facebook</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -158,19 +195,37 @@
             <ul class="activities_list list">
                 <li>
                     <div class="activities__image">
-                        <img src="./images/creating.jpg" alt="Верстка сайта" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/creating.webp 1x,  ./images/creating@2x.webp 2x" 
+                            media="(min-width: 370px)"
+                                type="image/webp" />
+                            <source srcset="./images/creating.jpg 1x, ./images/creating@2x.jpg 2x"
+                             media="(min-width: 370px)" />
+                        <img src="./images/creating.jpg" alt="Верстка сайта">
+                        </picture>
                         <p class="activities__item">Десктопные приложения</p>
                     </div>
                 </li>
                 <li>
                     <div class="activities__image">
-                    <img src="./images/select.jpg" alt="Выбор интерфейса для мобильного устройства" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/select.webp 1x,  ./images/select@2x.webp 2x" media="(min-width: 370px)"
+                                type="image/webp" />
+                            <source srcset="./images/select.jpg 1x, ./images/select@2x.jpg 2x" media="(min-width: 370px)" />
+                            <img src="./images/select.jpg" alt="Выбор интерфейса для мобильного устройства">
+                        </picture>
+
                     <p class="activities__item">Мобильные приложения</p>
                     </div>
                 </li>
                 <li>
                     <div class="activities__image">
-                    <img src="./images/graphic.jpg" alt="Работа с графикой" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/graphic.webp 1x,  ./images/graphic@2x.webp 2x" media="(min-width: 370px)"
+                                type="image/webp" />
+                            <source srcset="./images/graphic.jpg 1x, ./images/graphic@2x.jpg 2x" media="(min-width: 370px)" />
+                            <img src="./images/graphic.jpg" alt="Работа с графикой">
+                        </picture>
                     <p class="activities__item">Дизайнерские решения</p>
                     </div>
                 </li>
@@ -185,7 +240,20 @@
             <h2 class="section-title">Наша команда</h2>
                 <ul class="our-team__order list">
                     <li class="our_team__employee">
-                        <img src="./images/product-designer.jpg" alt="Product Designer" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/product-designer.webp 1x, ./images/product-designer@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp" />
+                            <source srcset="./images/product-designer.jpg 1x, ./images/product-designer@2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/product-designer-tablet.webp 1x, ./images/product-designer-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp" />
+                            <source srcset="./images/product-designer-tablet.jpg 1x, ./images/product-designer-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/product-designer-mobile.webp 1x, ./images/product-designer-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                type="image/webp" />
+                            <source srcset="./images/product-designer-mobile.jpg 1x, ./images/product-designer-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/product-designer.jpg" alt="Product Designer">
+                        </picture>
                             <div class="our-team__wrapper"> 
                                 <h3 class="our-team__employee-name">Игорь Демьяненко</h3>
                                 <p class="our-team__position" lang="en">Product Designer</p>
@@ -222,7 +290,20 @@
                             </div>
                     </li>
                     <li class="our_team__employee">
-                        <img src="./images/developer.jpg" alt="Frontend Developer" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/developer.webp 1x, ./images/developer@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp" />
+                            <source srcset="./images/developer.jpg 1x, ./images/developer@2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/developer-tablet.webp 1x, ./images/developer-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp" />
+                            <source srcset="./images/developer-tablet.jpg 1x, ./images/developer-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/developer-mobile.webp 1x, ./images/developer-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                type="image/webp" />
+                            <source srcset="./images/developer-mobile.jpg 1x, ./images/developer-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/developer.jpg" alt="Frontend Developer">
+                        </picture>
                             <div class="our-team__wrapper">
                                 <h3 class="our-team__employee-name">Ольга Репина</h3>
                                 <p class="our-team__position" lang="en">Frontend Developer</p>
@@ -259,7 +340,21 @@
                             </div>
                     </li>
                     <li class="our_team__employee">
-                        <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/marketing.webp 1x, ./images/marketing@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp" />
+                            <source srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/marketing-tablet.webp 1x, ./images/marketing-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp" />
+                            <source srcset="./images/marketing-tablet.jpg 1x, ./images/marketing-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/marketing-mobile.webp 1x, ./images/marketing-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                type="image/webp" />
+                            <source srcset="./images/marketing-mobile.jpg 1x, ./images/marketing-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                        <img src="./images/marketing.jpg" alt="Marketing">
+                        </picture>
+
                             <div class="our-team__wrapper">
                                 <h3 class="our-team__employee-name">Николай Тарасов</h3>
                                 <p class="our-team__position" lang="en">Marketing</p>
@@ -296,7 +391,20 @@
                             </div>
                     </li>
                     <li class="our_team__employee">
-                            <img src="./images/ui.jpg" alt="UI Designer" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/ui.webp 1x, ./images/ui@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp" />
+                            <source srcset="./images/ui.jpg 1x, ./images/ui@2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/ui-tablet.webp 1x, ./images/ui-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp" />
+                            <source srcset="./images/ui-tablet.jpg 1x, ./images/ui-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/ui-mobile.webp 1x, ./images/ui-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                type="image/webp" />
+                            <source srcset="./images/img-mobile.jpg 1x, ./images/ui-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/ui.jpg" alt="UI Designer">
+                        </picture>
                                 <div class="our-team__wrapper">
                                     <h3 class="our-team__employee-name">Михаил Ермаков</h3>
                                     <p class="our-team__position" lang="en">UI Designer</p>
@@ -456,5 +564,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

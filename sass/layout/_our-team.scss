@@ -1,30 +1,6 @@
 .our-team {
     background-color: var(--backgroud-light-color);
 }
-
-.our-team__order {
-    display: flex;
-}
-
-.our_team__employee {
-    width: 270px;
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-}
-
-.our-team__wrapper {
-    padding: 30px 32px;
-
-    border-radius: 0px 0px 4px 4px;
-
-    background: var(--major-color-light);
-}
-
 .our-team__employee-name {
     text-align: center;
 
@@ -35,6 +11,29 @@
     color: var(--color-titles);
 }
 
+.our_team__employee {
+    max-width: 450px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.our-team__wrapper {
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    border-radius: 0px 0px 4px 4px;
+
+    background: var(--major-color-light);
+}
+.our-team__employee-name {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    @include font(16px, 500, 19px);
+
+    color: var(--color-titles);
+}
 .our-team__position {
     text-align: center;
 
@@ -45,10 +44,73 @@
     color: var(--major-text-color);
 }
 
-.social-list--team {
-    justify-content: space-between;
-}
-
 .social-list__icon--team {
     fill: var(--initial-gray-color);
 }
+@media screen and (max-width: 767px) {
+    .our_team__employee {
+        margin-bottom: 30px;
+    }
+    .social-list--team {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .social-list--team {
+        justify-content: space-between;
+    }
+    .our-team__order {
+        display: flex;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .our-team__order {
+        flex-wrap: wrap;
+        
+        margin: -15px;
+    }
+    .our_team__employee {
+        max-width: 354px;
+
+        margin: 15px;
+        
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+            
+            &:nth-last-child(-n + 2) {
+                margin-bottom: 0;
+            }
+    }
+    .our-team__wrapper {
+        padding: 30px 74px 24px 74px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .our_team__employee {
+        max-width: 270px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    .our-team__wrapper {
+        padding: 30px 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,6 +29,11 @@
                     <li class="nav-menu__item"><a class="nav-menu__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
+            <button type="button" class="burger-menu" data-menu-open>
+                <svg class="burger-menu__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#burger-menu"></use>
+                </svg>
+            </button>
             <ul class="contacts list">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com">
@@ -47,6 +52,40 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close" data-menu-close>
+                    <svg class="btn-close__icon" width="18" height="18">
+                        <use href="./images/sprite.svg#vector"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-list list">
+                    <li class="mobile-list__item"><a class="mobile-list__link link"
+                            href="./index.html">Студия</a></li>
+                    <li class="mobile-list__item"><a class="mobile-list__link link mobile-list__link--active" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-list__item"><a class="mobile-list__link link" href="">Контакты</a></li>
+                </ul>
+                <ul class="mobile-contacts list">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__phone link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__email link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobile-social list">
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">Instagram</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">Twitter</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">Facebook</a></li>
+                    <li class="mobile-social__item"><a class="mobile-social__link link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -71,7 +110,20 @@
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                                 </div>
-                                <img src="./images/portfolio-img1.jpg" alt="Пример сайта" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img1.webp 1x, ./images/portfolio-img1@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img1.jpg 1x, ./images/portfolio-img1@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img1-tablet.webp 1x, ./images/portfolio-img1-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img1-tablet.jpg 1x, ./images/portfolio-img1-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img1-mobile.webp 1x, ./images/portfolio-img1-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img1-mobile.jpg 1x, ./images/portfolio-img1-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img1.jpg" alt="Пример сайта">
+                                    </picture> 
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item">Технокряк</h2>
@@ -89,7 +141,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img2.jpg" alt="Постер баскетбольной команды" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img2.webp 1x, ./images/portfolio-img2@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img2.jpg 1x, ./images/portfolio-img2@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img2-tablet.webp 1x, ./images/portfolio-img2-tablet@2x.webp 2x"
+                                            media="(min-width: 768px)" type="image/webp" />
+                                        <source srcset="./images/portfolio-img2-tablet.jpg 1x, ./images/portfolio-img2-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img2-mobile.webp 1x, ./images/portfolio-img2-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img2-mobile.jpg 1x, ./images/portfolio-img2-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img2.jpg" alt="Постер баскетбольной команды">
+                                    </picture>
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item">Постер <span lang="en">Orlean vs Golden Star</span></h2>
@@ -107,7 +172,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img3.jpg" alt="Логотип ресторана" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img3.webp 1x, ./images/portfolio-img3@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img3.jpg 1x, ./images/portfolio-img3@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img3-tablet.webp 1x, ./images/portfolio-img3-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img3-tablet.jpg 1x, ./images/portfolio-img3-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img3-mobile.webp 1x, ./images/portfolio-img3-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img3-mobile.jpg 1x, ./images/portfolio-img3-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img3.jpg" alt="Логотип ресторана">
+                                    </picture>
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item">Ресторан <span lang="en">Seafood</span></h2>
@@ -126,7 +204,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img4.jpg" alt="Наушники" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img4.webp 1x, ./images/portfolio-img4@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img4.jpg 1x, ./images/portfolio-img4@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img4-tablet.webp 1x, ./images/portfolio-img4-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img4-tablet.jpg 1x, ./images/portfolio-img4-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img4-mobile.webp 1x, ./images/portfolio-img4-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/img-mobile.jpg 1x, ./images/img-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img4.jpg" alt="Наушники">
+                                    </picture>
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item">Проект <span lang="en">Prime</span></h2>
@@ -144,7 +235,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img5.jpg" alt="Две коробки" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img5.webp 1x, ./images/portfolio-img5@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img5.jpg 1x, ./images/portfolio-img5@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img5-tablet.webp 1x, ./images/portfolio-img5-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img5-tablet.jpg 1x, ./images/portfolio-img5-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img5-mobile.webp 1x, ./images/portfolio-img5-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/img-mobile.jpg 1x, ./images/img-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img5.jpg" alt="Две коробки">
+                                    </picture>
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item">Проект<span lang="en">Boxes</span></h2>
@@ -162,7 +266,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img6.jpg" alt="Веб-сайт с информацией" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img6.webp 1x, ./images/portfolio-img6@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img6.jpg 1x, ./images/portfolio-img6@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img6-tablet.webp 1x, ./images/portfolio-img6-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img6-tablet.jpg 1x, ./images/portfolio-img6-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img6-mobile.webp 1x, ./images/portfolio-img6-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img6-mobile.jpg 1x, ./images/portfolio-img6-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img6.jpg" alt="Веб-сайт с информацией">
+                                    </picture>
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item" lang="en">Inspiration has no Borders</h2>
@@ -180,7 +297,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img7.jpg" alt="Журнал" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img7.webp 1x, ./images/portfolio-img7@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img7.jpg 1x, ./images/portfolio-img7@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img7-tablet.webp 1x, ./images/portfolio-img7-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img7-tablet.jpg 1x, ./images/portfolio-img7-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img7-mobile.webp 1x, ./images/portfolio-img7-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img7-mobile.jpg 1x, ./images/portfolio-img7-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img7.jpg" alt="Журнал">
+                                    </picture>
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item">Издание Limited Edition</h2>
@@ -198,7 +328,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img8.jpg" alt="Бирка с названием проекта" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img8.webp 1x, ./images/portfolio-img8@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img8p.jpg 1x, ./images/portfolio-img8@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img8-tablet.webp 1x, ./images/portfolio-img8-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img8-tablet.jpg 1x, ./images/portfolio-img8-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img8-mobile.webp 1x, ./images/portfolio-img8-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img8-mobile.jpg 1x, ./images/portfolio-img8-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img8.jpg" alt="Бирка с названием проекта">
+                                    </picture>
                             </div>
                             <div class="portfolio__content-wrapper">
                                 <h2 class="portfolio__item">Проект LAB</h2>
@@ -216,7 +359,20 @@
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
                                 </div>
-                                <img src="./images/portfolio-img9.jpg" alt="Работа за ноутбуком в приложении" width="370" height="294">
+                                    <picture>
+                                        <source srcset="./images/portfolio-img9.webp 1x, ./images/portfolio-img9@2x.webp 2x" media="(min-width: 1200px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img9.jpg 1x, ./images/portfolio-img9@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                        <source srcset="./images/portfolio-img9-tablet.webp 1x, ./images/portfolio-img9-tablet@2x.webp 2x" media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img9-tablet.jpg 1x, ./images/portfolio-img9-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    
+                                        <source srcset="./images/portfolio-img9-mobile.webp 1x, ./images/portfolio-img9-mobile@2x.webp 2x" media="(max-width: 767px)"
+                                            type="image/webp" />
+                                        <source srcset="./images/portfolio-img9-mobile.jpg 1x, ./images/portfolio-img9-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                        <img src="./images/portfolio-img9.jpg" alt="Работа за ноутбуком в приложении">
+                                    </picture>
                             </div>
                         <div class="portfolio__content-wrapper">
                             <h2 class="portfolio__item" lang="en">Growing Business</h2>
@@ -296,6 +452,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
