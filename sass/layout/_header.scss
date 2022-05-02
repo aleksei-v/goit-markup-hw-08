@@ -9,7 +9,9 @@
 
     color: var(--logo-color);
 }
-
+.header {
+    border-bottom: 1px solid #ececec;
+}
 @media screen and (max-width: 767px) {
     .header {
         position: relative;
@@ -35,7 +37,7 @@
 }
 
 .header {
-    border-bottom: 1px solid #ececec;
+    position: relative;
 }
 .navigation {
     display: flex;
